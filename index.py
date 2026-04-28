@@ -8,7 +8,10 @@ from fastapi.middleware.cors import CORSMiddleware
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000", "https://image-kosyga.vercel.app/"],
+    allow_origins=["http://localhost:3000",
+                   "http://image-kosyga.vercel.app",
+                   "https://image-kosyga.vercel.app"
+                   ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
